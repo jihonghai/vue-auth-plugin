@@ -1,0 +1,69 @@
+{
+  "name": "vue-auth-plugin",
+  "version": "0.0.1",
+  "description": "An auth plugin for Vue.js 2",
+  "author": "jihonghai",
+  "license": "MIT",
+  "main": "dist/vue-auth.common.js",
+  "module": "dist/vue-auth.esm.js",
+  "unpkg": "dist/vue-auth.js",
+  "jsdelivr": "dist/vue-auth.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jihonghai/vue-auth-plugin.git"
+  },
+  "typings": "types/index.d.ts",
+  "files": [
+    "src/*.js",
+    "dist/*.js",
+    "types/*.d.ts"
+  ],
+  "keywords": [
+    "vue",
+    "auth"
+  ],
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "npm run test:unit",
+    "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+    "release": "bash build/release.sh"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.3",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow-vue": "^1.0.0",
+    "buble": "^0.19.3",
+    "cross-spawn": "^5.0.1",
+    "css-loader": "^0.28.10",
+    "es6-promise": "^4.2.4",
+    "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-vue-libs": "^2.1.0",
+    "express": "^4.16.2",
+    "express-urlrewrite": "^1.2.0",
+    "flow-bin": "^0.66.0",
+    "jasmine": "2.8.0",
+    "path-to-regexp": "^1.7.0",
+    "rollup": "^0.56.4",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^9.0.0",
+    "rollup-plugin-flow-no-whitespace": "^1.0.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-watch": "^4.0.0",
+    "selenium-server": "^2.53.1",
+    "typescript": "^2.7.2",
+    "uglify-js": "^3.3.13",
+    "vue": "^2.5.16",
+    "vue-loader": "^13.7.1",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "bugs": {
+    "url": "https://github.com/vuejs/vue-router/issues"
+  },
+  "homepage": "https://github.com/vuejs/vue-router#readme"
+}
